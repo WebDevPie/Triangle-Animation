@@ -1,0 +1,25 @@
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+.triangle-svg svg {
+    filter: drop-shadow(0 0 8px #56c5f9);
+}
+
+.triangle-svg polygon {
+    /* stroke-dasharray: 50; */
+    animation: animate 1.5s linear infinite reverse;
+}
+
+@keyframes animate {
+    to {
+        stroke-dashoffset: 100;
+    }
+}
